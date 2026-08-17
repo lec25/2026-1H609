@@ -31,7 +31,14 @@ data6
 
 
 ## 7th
-set.seed(7)+
+set.seed(7)
 data7 <- data[data$種別=="学生" & data$"attend7" == 1,-c(7:22)]
 data7$group7 <- sample(rep(1:3, length.out = nrow(data7)))
 data7
+
+## 8th
+set.seed(8)
+data8 <- data[data$種別=="学生" & data$"attend8" == 1,-c(7:24)]
+data8$group8 <- sample(rep(1:3, length.out = nrow(data8)))
+data8
+
